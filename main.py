@@ -30,7 +30,7 @@ def main():
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     # --- CONFIGURATION FOR SPEED ESTIMATION ---
-    # 1. Define 4 points on the screen that form a rectangle on the road
+    # Define 4 points on the screen that form a rectangle on the road
     # Order: Top-Left, Top-Right, Bottom-Right, Bottom-Left
     # YOU MUST ADJUST THESE TO MATCH YOUR VIDEO ROAD
     SOURCE = np.array([
@@ -40,7 +40,7 @@ def main():
         [100, 700]   # Bottom-Left
     ])
 
-    # 2. Define real-world dimensions of that area (in meters)
+    # Define real-world dimensions of that area (in meters)
     # e.g., a 25 meter long stretch of road that is 8 meters wide
     TARGET_WIDTH = 8
     TARGET_LENGTH = 25
